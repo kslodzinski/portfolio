@@ -67,14 +67,15 @@ main {
 
 .box:hover { cursor: pointer; transform: scale(1.15); transition: 1s; }
 
-.box a {
-  color: white;
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
+
 .box p {
   font-family: "Monoton", cursive;
   font-size: 39px;
   letter-spacing: 2px;
+  color: white;
 }
 
 /* -------------------------------------------------------- */
