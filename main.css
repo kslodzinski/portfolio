@@ -26,7 +26,7 @@ font-family: 'Ubuntu Condensed', sans-serif; */
 
 header {
   width: 100%;
-  height: 20%;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@ h2 { font-family: 'Roboto', sans-serif; font-size: 29px; letter-spacing: 1px; ma
 
 main {
   width: 100%;
-  height: 65%;
+  height: 60%;
 }
 
 .box-container {
@@ -51,8 +51,8 @@ main {
 }
 
 .box {
-  width: 350px;
-  height: 350px;
+  width: 370px;
+  height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +65,7 @@ main {
   background-clip: content-box, border-box;
 }
 
-.box:hover { cursor: pointer; transform: scale(1.2); transition: 1s; }
+.box:hover { cursor: pointer; transform: scale(1.15); transition: 1s; }
 
 .box a {
   color: white;
@@ -111,16 +111,61 @@ main {
     .box p { font-size: 32px; }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 750px) {
+@media screen and (max-width: 1000px) and (min-width: 800px) {
     .container { height: 100%; }
     header { height: 350px; }
     h1 { font-size: 28px; }
     h2 { font-size: 25px; }
     .main { height: 100%; }
     .box-container { flex-wrap: wrap; }
-    .box { width: 360px; height: 360px; margin: 40px; }
+    .box { width: 320px; height: 320px; margin: 40px; }
     .box3 { margin-bottom: 40px; }
     .box:hover { cursor: pointer; transform: scale(1.1); transition: 1s; }
     .box p { font-size: 32px; }
     .social-panel { padding-top: 40px; padding-bottom: 40px; }
+}
+
+@media screen and (max-width: 800px) and (min-width: 660px) {
+    .container { height: 100%; }
+    header { height: 350px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 25px; }
+    .main { height: 100%; }
+    .box-container { flex-wrap: wrap; }
+    .box { width: 280px; height: 280px; margin: 30px; }
+    .box3 { margin-bottom: 40px; }
+    .box:hover { cursor: pointer; transform: scale(1.1); transition: 1s; }
+    .box p { font-size: 29px; }
+    .social-panel { padding-top: 40px; padding-bottom: 40px; }
+    
+}
+
+@media screen and (max-width: 660px) and (min-width: 460px) {
+    .container { height: 100%; }
+    header { height: 350px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    .main { height: 100%; }
+    .box-container { flex-wrap: wrap; }
+    .box { width: 200px; height: 200px; margin: 20px; }
+    .box3 { margin-bottom: 40px; }
+    .box:hover { cursor: pointer; transform: scale(1.1); transition: 1s; }
+    .box p { font-size: 28px; font-family: 'Ubuntu Condensed'; font-weight: bold; letter-spacing: 3px;}
+    .social-panel { padding-top: 40px; padding-bottom: 40px; }
+    
+}
+
+@media screen and (max-width: 460px) and (min-width: 1px) {
+    .container { height: 100%; }
+    header { height: 350px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 21px; }
+    .main { height: 100%; }
+    .box-container { flex-wrap: wrap; }
+    .box { width: 150px; height: 150px; margin: 20px; }
+    .box3 { margin-bottom: 40px; }
+    .box:hover { cursor: pointer; transform: scale(1.1); transition: 1s; }
+    .box p { font-size: 20px; font-family: 'Ubuntu Condensed'; font-weight: bold; letter-spacing: 3px;}
+    .social-panel { padding-top: 40px; padding-bottom: 40px; }
+    
 }
