@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- kluczowe informacjee                       -->
+
+    <title>Developer page.</title>
+    <meta name="author" content="Kevin Słodziński">
+    <meta name="description" content="Developer page">
+    <meta name="keywords" content="master, html, portfolio, kevin, javascript">
+
+    <!-- ------------------------------------------ -->
+
+    <!-- techniczne                         -->
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------------------------------------ -->
+
+    <!-- pliki stylow css                            -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ------------------------------------------ -->
+
+<body>
+
+    <div class="container">
+
+        <textarea name="text" id="text"></textarea>
+
+        <!-- ------------------------------------------ -->
+
+        <input type=range min=".5" max="3" value="1" id=fader step="0.5" onchange="outputUpdate(value)">
+
+        <!-- ------------------------------------------ -->
+
+        <div class="buttons-holder">
+            <button id="play-button">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+            <button id="pause-button">
+                <i class="fa fa-pause" aria-hidden="true"></i>
+            </button>
+            <button id="stop-button">
+                <i class="fa fa-stop" aria-hidden="true"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- DODATKOWE STYLE ? SKRYPTY ? ZALACZNIKI ? -->
+
+    <script src="script.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5bbe1138ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ------------------------------------------ -->
+
+</body>
+
+</html>
