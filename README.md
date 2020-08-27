@@ -1,4 +1,4 @@
 # portfolio
 Kevin Slodzinski portfolio
 
-live : https://www.kslodzinski/freeko.pl
+live : www.kslodzinski/freeko.pl
