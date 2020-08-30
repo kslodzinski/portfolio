@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/* fonty */
+h1 { font-size: 34px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; }
+h2 { font-size: 30px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; }
+h3 { font-size: 26px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 1px; }
+h4 { font-size: 24px; font-family: 'Montserrat Alternates', sans-serif; }
+h5 { font-size: 22px;  font-family: 'Lato', sans-serif; }
+h6 { font-size: 20px; }
+
+p { font-size: 24px; font-family: 'Lato', sans-serif; margin: 5px;}
+span { font-size: 33px;  }
+i { font-size: 23px; }
+a { font-size: 24px; text-decoration: none; color: white; text-transform: uppercase; font-family: 'Open Sans', sans-serif; border-bottom: 1px solid indianred;}
+
+.container {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/darth_stripe.png');
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* lewa */
+.left-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* introduction */
+.personal-info {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.personal-info img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 55px;
+}
+
+/* find-me-sec */
+.find-me {
+  min-height: 250px;
+  border-top: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* dzielaca */
+.cross-line {
+  width: 1%;
+  height: 85vh;
+  background-color: indianred;
+  border-radius: 10px;
+}
+
+/* prawa */
+.right-side {
+  width: 69%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* doswiadzcenie zawodowe */
+.work-exp-sec {
+  text-align: center;
+  width: 80%;
+  min-height: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 2px solid indianred;
+}
+
+.work-exp-single-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-exp-single-box {
+  margin-left: 50px;
+}
+
+.job-duration {
+  margin-right: 50px;
+}
+
+/* tooltipy */
+/* Tooltip text */
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 620px;
+  min-height: 200px;
+  background-color: rgba(2, 2, 2);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  border: 1.5px solid indianred;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ padding-top: 10px;
+ padding-bottom: 10px; 
+ font-size: 25px; font-family: 'Raleway', sans-serif;
+ letter-spacing: 1px;
+}
+
+.tooltip-text li {margin:3px; list-style-type: none;}
+
+.tooltip i { font-size: 40px; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* doswiadzcenie szkolne */
+.edu-sec {
+  min-height: 120px;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid indianred;
+}
+
+/* doswiadzcenie jezykowe */
+.lang-sec {
+  width: 80%;
+  min-height: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid indianred;
+}
+
+/* skille */
+.skills-sec {
+  width: 80%;
+  min-height: 350px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid indianred;
+}
+
+.half-box {
+  width: 50%;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1000 x 750 */
+@media screen and (max-width: 1350px) and (min-width: 1050px) {
+/* fonty */
+h1 { font-size: 28px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; }
+h2 { font-size: 26px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; }
+h3 { font-size: 22px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 1px; }
+h4 { font-size: 20px; font-family: 'Montserrat Alternates', sans-serif; }
+h5 { font-size: 20px;  font-family: 'Lato', sans-serif; }
+h6 { font-size: 18px; }
+
+p { font-size: 19px; font-family: 'Lato', sans-serif; margin: 5px;}
+span { font-size: 30px;  }
+i { font-size: 20px; }
+a { font-size: 20px; text-decoration: none; text-transform: uppercase; font-family: 'Open Sans', sans-serif; border-bottom: 1px solid indianred;}
+
+.tooltip i { font-size: 30px; }
+
+.right-side { width: 64%; }
+.left-side { width: 35%; align-items: center;}
+
+.work-exp-sec { width: 90%; }
+.edu-sec { width: 90%; }
+.lang-sec { width: 90%; }
+.skills-sec { width: 90%; }
+
+
+.work-exp-single-box {
+  margin-left: 20px; }
+
+.job-duration {
+  margin-right: 20px; }
+
+}
+
+/* 750 x 450 */
+@media screen and (max-width: 1050px) and (min-width: 850px) {
+  /* fonty */
+h1 { font-size: 21px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+h2 { font-size: 18px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+h3 { font-size: 18px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 0.7px; }
+h4 { font-size: 16px; font-family: 'Montserrat Alternates', sans-serif; }
+h5 { font-size: 14px;  font-family: 'Lato', sans-serif; }
+h6 { font-size: 18px; }
+
+p { font-size: 16px; font-family: 'Lato', sans-serif; margin: 3px;}
+span { font-size: 24px;  }
+i { font-size: 18px; }
+a { font-size: 16px; text-decoration: none; text-transform: uppercase; font-family: 'Open Sans', sans-serif; border-bottom: 1px solid indianred;}
+
+.tooltip i { font-size: 22px; }
+
+.right-side { width: 64%; }
+.left-side { width: 35%; align-items: center;}
+
+.work-exp-sec { width: 90%; }
+.edu-sec { width: 90%; }
+.lang-sec { width: 90%; }
+.skills-sec { width: 90%; }
+
+
+.work-exp-single-box {
+  margin-left: 20px; }
+
+.job-duration {
+  margin-right: 20px; }
+  .tooltip .tooltip-text { width: 50%; font-size: 20px; }
+
+}
+/* 450 -- == 0 */
+
+@media screen and (max-width: 850px) and (min-width: 500px) {
+  .container { flex-direction: column; }
+  .left-side { width: 100%; } .right-side {width: 100%;} .cross-line { display: none; }
+
+  .work-exp-sec { width: 90%; }
+.edu-sec { width: 90%; }
+.lang-sec { width: 90%; }
+.skills-sec { width: 90%; }
+
+ /* fonty */
+ h1 { font-size: 23px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+ h2 { font-size: 20px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+ h3 { font-size: 20px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 0.7px; }
+ h4 { font-size: 18px; font-family: 'Montserrat Alternates', sans-serif; }
+ h5 { font-size: 16px;  font-family: 'Lato', sans-serif; }
+ h6 { font-size: 18px; }
+ 
+ p { font-size: 18px; font-family: 'Lato', sans-serif; margin: 3px;}
+ span { font-size: 26px;  }
+ i { font-size: 20px; }
+ a { font-size: 18px; text-decoration: none;text-transform: uppercase; font-family: 'Open Sans', sans-serif; border-bottom: 1px solid indianred;}
+ 
+ .tooltip .tooltip-text { width: 80%; font-size: 22px; }
+ .tooltip i { font-size: 22px; }
+
+ .work-exp-single-box {
+  margin-left: 5px; }
+
+.job-duration {
+  margin-right: 5px; }
+
+}
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+  .container { flex-direction: column; }
+  .left-side { width: 100%; } .right-side {width: 100%;} .cross-line { display: none; }
+
+  .work-exp-sec { width: 90%; }
+.edu-sec { width: 90%; min-height: 105px; padding-top:10px; padding-bottom: 10px;}
+.lang-sec { width: 90%; min-height: 65px; }
+.skills-sec { width: 90%; height: 100%; display:flex; flex-direction: column;padding-top:10px; padding-bottom: 10px;}
+.half-box { width: 80%;}
+
+
+ /* fonty */
+ h1 { font-size: 21px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+ h2 { font-size: 18px; font-family: 'Raleway', sans-serif; letter-spacing: 0.7px; }
+ h3 { font-size: 17px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 0.7px; }
+ h4 { font-size: 15px; font-family: 'Montserrat Alternates', sans-serif; }
+ h5 { font-size: 13px;  font-family: 'Lato', sans-serif; }
+ h6 { font-size: 18px; }
+ 
+ p { font-size: 15px; font-family: 'Lato', sans-serif; margin: 1px;}
+ span { font-size: 23px;  }
+ i { font-size: 17px; }
+ a { font-size: 15px; text-decoration: none; text-transform: uppercase; font-family: 'Open Sans', sans-serif; border-bottom: 1px solid indianred;}
+ 
+ .tooltip .tooltip-text { width: 90%; font-size: 18px; }
+ .tooltip i { font-size: 18px; }
+
+ .work-exp-single-box {
+  margin-left: 5px; }
+
+.job-duration {
+  margin-right: 5px; }
+
+}
+
+/* background 
+========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ ========================================================
+ 
+  */
