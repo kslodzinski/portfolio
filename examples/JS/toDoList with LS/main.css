@@ -24,6 +24,10 @@ font-family: 'Ubuntu Condensed', sans-serif; */
 
 /* -------------------------------------------------------- */
 
+/* applied when the todo item is checked */
+.checked { 
+  text-decoration: line-through;
+}
 
 
 @media screen and (max-width: 460px) and (min-width: 1px) {
