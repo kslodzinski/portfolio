@@ -26,7 +26,24 @@ font-family: 'Ubuntu Condensed', sans-serif; */
 
 /* applied when the todo item is checked */
 .checked { 
-  text-decoration: line-through;
+  color: pink;
+}
+
+.checkbox {
+  margin-right: 10px;
+  color: pink;
+}
+
+.delete-button {
+  float: right;
+  background-color: #dc143c;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 550;
 }
 
 
