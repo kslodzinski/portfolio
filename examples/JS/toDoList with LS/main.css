@@ -4,24 +4,45 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Monoton&family=Noto+Sans&family=Ubuntu+Condensed&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif; */
+
 body,
 html {
   color: white;
+  background-image: url('back.png');
 }
 
-/* font-family: 'Monoton', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Ubuntu Condensed', sans-serif; */
-
 /* -------------------------------------------------------- */
+
+/* togithub  */
+.github-link {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  padding: 36px;
+  font-size: 65px;
+}
+
+.github-link a { text-decoration: none; list-style-type: none; color: white;}
+
+.github-link:hover {
+ transform: rotate(360deg); transition: 2s;
+}
 
 .container {
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+  height: 100%;
   display: flex;
-  flex-direction: column;ż
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -29,77 +50,171 @@ font-family: 'Ubuntu Condensed', sans-serif; */
 form {
   width: 80%;
   height: 100px;
-  border: 3px solid lime;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px; margin-bottom: 16px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 form input {
-  width: 60%;
-  height: 60%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 500px;
+  height: 70px;
+  color: white;
+  border: 4px solid #2F7878;
+  background-color: transparent;
+  outline: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   text-align: center;
-  font-size: 32px;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
+
+.todo-input::placeholder { color: white; }
 
 form button {
-  width: 10%;
-  height: 60%;
+  width: 80px;
+  height: 70px;
+  outline: none;
+  background: transparent;
+  color: white;
+  border: 4px solid #2F7878;
+  border-left: 1px dotted black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   font-size: 32px;
+  cursor: pointer;
 }
 
-/* lista */
+form button i:hover { transform: rotate(360deg); transition: 0.9s; }
+
+/* LISTA Z ZADANIAMI */
 .todo-items {
-  width: 80%;
-  min-height: 600px;
-  border: 3px solid lime;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
-.todo-items li {
-  width: 80%;
-  height: 80px;
-  margin: 20px;
-  font-size: 32px;
-  letter-spacing: 0.3px;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
+.item { 
+  width: 90%;
+  min-height: 60px;
+  display: flex; 
   justify-content: space-between;
+  align-items: center;
+  word-break: break-all;
   text-align: center;
 }
 
-input[type="checkbox"] { margin: 20px; transform: scale(1.5); }
+.bottom-line {
+  width: 70%;
+  border: 1px solid #2F7878;
+}
+
+/* ul li {
+  border-bottom: 2px solid green;
+} */
+
+.item p { 
+  font-family: 'Ubuntu Condensed', sans-serif; 
+  font-size: 26px; 
+  letter-spacing: 0.75px;
+}
+
+
+input[type="radio"] { margin: 30px; transform: scale(2.5); cursor: pointer; }
+input[type="radio"]:hover { transform: scale(3.2); }
+
+.delete-button {
+  margin: 30px;
+  padding: 14px;
+  border: 3px solid #2F7878;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: .3s all;
+}
+
+.delete-button:hover {
+  transform: scale(1.2);  transform: rotate(360deg); transition: 2s;
+}
+
+.is-done-btn {
+  margin: 30px;
+  padding: 14px;
+  border: 3px solid #2F7878;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: .3s all;
+}
+
+.is-done-btn:hover {
+  transform: scale(1.2);  transform: rotate(360deg); transition: 2s;
+}
+
 /* -------------------------------------------------------- */
 
 /* applied when the todo item is checked */
-.checked { 
+.checked p{ 
   text-decoration: line-through;
+  opacity: 0.7;
 }
 
-.checkbox {
-  margin-right: 10px;
-  color: pink;
+/* ========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ ======================================================== */
+
+ @media screen and (max-width: 1200px) and (min-width: 850px) {
+  .github-link { font-size: 45px; }
+  .container { width: 100%; height: 100%; }
+  form { height: 80px; margin-top: 32px; margin-bottom: 16px; position: inherit; }
+  .todo-input::placeholder { font-size: 25px; }
+  .item { min-height: 40px; }
+  .bottom-line {
+    width: 80%;
+  }
+  .item p{ font-size: 19px; }
+  .is-done-btn { margin: 25px; padding: 10px; font-size: 26px; }
+  .delete-button { margin: 25px; padding: 10px; font-size: 26px; }
 }
 
-.delete-button {
-  float: right;
-  margin: 20px;
-  padding: 6px;
-  background-color: #dc143c;
-  border: none;
-  outline: none;
-  border-radius: 7px;
-  margin-left: 10px;
-  font-size: 1.6rem;
-  font-weight: 550;
+@media screen and (max-width: 850px) and (min-width: 550px) {
+  .github-link { font-size: 39px; }
+  .container { width: 100%; height: 100%; }
+  form { height: 56px; margin-top: 32px; margin-bottom: 16px; position: inherit; }
+  form input { width: 400px; height: 60px; }
+  .add-button { height: 60px; }
+  .todo-input::placeholder { font-size: 20px; }
+  .item { min-height: 30px; }
+  .bottom-line {
+    width: 80%;
+  }
+  .item p{ font-size: 16px; letter-spacing: 0.2px;}
+  .is-done-btn { margin: 15px; padding: 7px; font-size: 23px; }
+  .delete-button { margin: 15px; padding: 7px; font-size: 23px; }
 }
 
-
-@media screen and (max-width: 460px) and (min-width: 1px) {
-
-    
+@media screen and (max-width: 550px) and (min-width: 150px) {
+  .github-link { font-size: 36px; }
+  .container { width: 100%; height: 100%; }
+  form { height: 46px; margin-top: 24px; margin-bottom: 14px; position: inherit; }
+  form button i { font-size: 20px; }
+  form input { width: 300px; height: 50px; font-size: 16px; }
+  .add-button { height: 50px; }
+  .todo-input::placeholder { font-size: 16px; }
+  .item { width: 96%; min-height: 24px; }
+  .bottom-line {
+    width: 95%;
+  }
+  .item p{ font-size: 15px; letter-spacing: 0.1px; }
+  .is-done-btn { margin: 13px; padding: 5px; font-size: 20px; }
+  .delete-button { margin: 13px; padding: 5px; font-size: 20px; }
 }
